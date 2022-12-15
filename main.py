@@ -1,4 +1,3 @@
-import os
 from telegraph import upload_file
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -11,7 +10,7 @@ Bot = Client(
     api_hash="29021e7d8f6fe5338a45470115567f9e"
 )
 
-DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
+DOWNLOAD_LOCATION = "./DOWNLOADS/"
 
 START_TEXT = """Hello {},
 I am an under 5MB media or file to telegra.ph link uploader bot.
